@@ -1,122 +1,103 @@
-<!DOCTYPE HTML>
-<!--
-	Parallelism by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Parallelism by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/hobbies.css" />
-		<noscript><link rel="stylesheet" href="assets/css/blankscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
-				<!-- Main -->
-					<section id="main">
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
 
-						<!-- Items -->
-							<div class="items">
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
-								<div class="item intro span-2">
-									<h1>Parallelism</h1>
-									<p>A responsive portfolio site<br />
-									template by HTML5 UP</p>
-								</div>
+* {
+  box-sizing: border-box;
+}
 
-								<article class="item thumb span-1">
-									<h2>You really got me</h2>
-									<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""></a>
-								</article>
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
 
-								<article class="item thumb span-2">
-									<h2>Ad Infinitum</h2>
-									<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""></a>
-								</article>
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
 
-								<article class="item thumb span-1">
-									<h2>Different.</h2>
-									<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt=""></a>
-								</article>
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
 
-								<article class="item thumb span-1">
-									<h2>Elysium</h2>
-									<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""></a>
-								</article>
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
 
-								<article class="item thumb span-3">
-									<h2>Kingdom of the Wind</h2>
-									<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a>
-								</article>
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
 
-								<article class="item thumb span-1">
-									<h2>The Pursuit</h2>
-									<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt=""></a>
-								</article>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_5terre.jpg">
+      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-								<article class="item thumb span-2">
-									<h2>Boundless</h2>
-									<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""></a>
-								</article>
 
-								<article class="item thumb span-2">
-									<h2>The Spectators</h2>
-									<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt=""></a>
-								</article>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-							</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-						<!-- Items -->
-							<div class="items">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
 
-								<article class="item thumb span-3"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>
-								<article class="item thumb span-1"><h2>The Pursuit</h2><a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt=""></a></article>
-								<article class="item thumb span-2"><h2>Boundless</h2><a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt=""></a></article>
-								<article class="item thumb span-2"><h2>The Spectators</h2><a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt=""></a></article>
-								<article class="item thumb span-1"><h2>You really got me</h2><a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt=""></a></article>
-								<article class="item thumb span-2"><h2>Ad Infinitum</h2><a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt=""></a></article>
-								<article class="item thumb span-1"><h2>Different.</h2><a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt=""></a></article>
-								<article class="item thumb span-2"><h2>Kingdom of the Wind</h2><a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt=""></a></article>
-								<article class="item thumb span-1"><h2>Elysium</h2><a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt=""></a></article>
+<div class="clearfix"></div>
 
-							</div>
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
 
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<section>
-							<p>This is <strong>Parallelism</strong>, a responsive portfolio site template by <a href="http://html5up.net">HTML5 UP</a>. Free for personal
-							and commercial use under the <a href="http://html5up.net/license">Creative Commons Attribution</a> license.</p>
-						</section>
-						<section>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</section>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js2/jquery.min.js"></script>
-			<script src="assets/js2/jquery.poptrox.min.js"></script>
-			<script src="assets/js2/browser.min.js"></script>
-			<script src="assets/js2/breakpoints.min.js"></script>
-			<script src="assets/js2/util.js"></script>
-			<script src="assets/js2/main.js"></script>
-
-	</body>
+</body>
 </html>
